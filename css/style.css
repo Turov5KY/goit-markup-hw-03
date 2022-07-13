@@ -10,8 +10,15 @@
 body{
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
     margin: 0;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 h1, h2, h3 ,h4 ,h5, h6, p, ul ,li{
@@ -29,15 +36,23 @@ li{
 .conteiner{
     width: 1200px;
     margin: 0 auto;
-    /* background-color: #f2f2f2; */
-    padding: 0 15px;
+    
 
+}
+
+.section{
+ padding-top: 94px;
+ padding-bottom: 94px;
+
+}
+
+.work .section{
+    padding-top: 0;
 }
 
 /* HEADER  _________________________________________*/
 
 .page-header{
-    margin-bottom: 42px;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -87,7 +102,7 @@ li{
 
  .site-nav .page-nav{
     display: flex;
-    margin-left: 92px;
+    margin-left: 93px;
 }
 
 .page-nav .item{
@@ -104,7 +119,7 @@ li{
 }
 
 .auth-nav .item + .item{
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .contact-link{
@@ -124,12 +139,19 @@ li{
 .hero{
     background-color: #2F303A;
     text-align: center;
-    padding: 200px;
-    margin-bottom: 94px;
+    padding: 200px 0;
+    
 }
 
 .hero-title{
-    margin-top: 0;
+    margin: 0 auto;
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: var(--primary-white-color);
     font-size: 44px;
     margin-bottom: 30px;
@@ -148,14 +170,17 @@ li{
     min-width: 200px;
     border: none;
     cursor: pointer;
+    letter-spacing: 0.06em;
 
 }
 
 /* feature ________________________________________________________*/
  
 
-.feature {
- margin-bottom: 94px;
+.feature h2{
+    text-align: center;
+    display: none;
+ 
  
 }
 
@@ -192,13 +217,6 @@ li{
 
 /* WORK ___________________________________________________________________*/
 
-.work{
-    margin-bottom: 94px;
-    
-}
-
-    
-
 
 .work-title{
     font-weight: 700;
@@ -212,11 +230,13 @@ li{
 
 .work-list{
     display: flex;
+    justify-content: center;
 }
 
 .work-list .item{
-    display: block;
+    
     margin-right: 30px;
+    
 }
 
 .work-list .item:last-child{
@@ -226,8 +246,7 @@ li{
 
 .team{
    background-color: #F5F4FA; 
-   padding-top: 94px;
-   padding-bottom: 94px;
+   
 }
 
 .team-title{
@@ -247,7 +266,6 @@ li{
 .team-flex .item{
     margin-right: 30px;
     text-align: center;
-    padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-white-color);
@@ -268,9 +286,9 @@ li{
 }
 
 .team-text{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
+    margin-bottom: 30px;
 
 }
 
@@ -298,11 +316,11 @@ address{
     color: var(--primary-white-color);
 }
 
-.address{
+.contact .item{
     margin-bottom: 9px;
 }
 
-.address:last-child{
+.contact .item:last-child{
     margin-bottom: 0;
 }
 
@@ -310,6 +328,12 @@ address{
     color: var(--accent-color);
 }
 
+.contact-address {
+    color: var(--primary-white-color);
+}
+.contact{
+    font-style: normal;
+}
 
 
 
@@ -324,9 +348,7 @@ address{
 
 /* PORTFOLIO */
 
-.header-portfolio{
-    margin-bottom: 94px;
-}
+
 
 
 /* BUTTON */
@@ -356,7 +378,6 @@ address{
 /* PROJECT LIST ___________________________*/
 
 .project{
-    margin-bottom: 94px;
     display: block;
 }
 
@@ -382,12 +403,13 @@ address{
 }
 
 .project-list .item{
+    display: block;
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
 
     background-color: var(--primary-white-color);
-    border: 1px solid #EEEEEE;
+    
 }
 
 .project-list .item:nth-child(3n + 3){
@@ -398,19 +420,22 @@ address{
     margin-bottom: 0;
   }
 
+  .cards{
+    padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+  }
 
-.project h2{
-    margin-left: 24px;
-    margin-top: 20px;
+.cards-title{
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     color: var(--title-text-color);
 }
 
-.project p{
-    margin-left: 24px;
-    margin-bottom: 20px;
+.cards-text{
     font-size: 16px;
     line-height: 1.9;
 }
