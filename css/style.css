@@ -400,6 +400,7 @@ address{
 .project .project-list{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-list .item{
