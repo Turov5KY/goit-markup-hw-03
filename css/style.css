@@ -4,6 +4,8 @@
     --accent-color: #2196F3;
     --primary-text-color:  #757575;
     --title-text-color: #212121;
+    --background-dark-color: #2F303A;
+    --background-grey-color: #F5F4FA;
 
 }
 
@@ -25,17 +27,24 @@ h1, h2, h3 ,h4 ,h5, h6, p, ul ,li{
     margin: 0;
     padding: 0;
 }
-a{
+
+.link,
+.contact-link,
+.logo,
+.logo-footer,
+.contact-address {
     text-decoration: none;
 }
 
-li{
+
+.item {
     list-style-type: none;
 }
 
 .conteiner{
     width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
     
 
 }
@@ -137,7 +146,7 @@ li{
 /* HERO ___________________________________________________*/
 
 .hero{
-    background-color: #2F303A;
+    background-color: var(--background-dark-color);
     text-align: center;
     padding: 200px 0;
     
@@ -153,7 +162,6 @@ li{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
-    font-size: 44px;
     margin-bottom: 30px;
     
 }
@@ -205,6 +213,7 @@ li{
     color: var(--title-text-color);
     margin-top: 0;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .feature-text{
@@ -245,7 +254,7 @@ li{
 /* TEAM ___________________________________________________________________________*/
 
 .team{
-   background-color: #F5F4FA; 
+   background-color: var(--background-grey-color); 
    
 }
 
@@ -295,7 +304,7 @@ li{
 /* FOOTER ______________________________________________________________*/
 
 .footer{
-    background-color: #2F303A;
+    background-color: var(--background-dark-color);
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -361,7 +370,7 @@ address{
 .button-nav{
     padding: 6px 22px;
     color: var(--title-text-color);
-    background: #F5F4FA;
+    background: var(--background-grey-color);
     border-radius: 4px;
     border: none;
     font-weight: 500;
